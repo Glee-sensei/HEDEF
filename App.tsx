@@ -13,8 +13,6 @@ const HomePage = () => (
   <main>
     <Hero />
     <ImpactStats />
-    
-    {/* About Section with Real Team/Beneficiary Media */}
     <section id="about" className="py-24 bg-white overflow-hidden">
       <div className="container mx-auto px-4">
         <div className="grid md:grid-cols-2 gap-16 items-center">
@@ -22,14 +20,10 @@ const HomePage = () => (
             <div className="absolute -top-10 -left-10 w-64 h-64 bg-teal-100 rounded-full blur-3xl opacity-50"></div>
             <div className="absolute -bottom-10 -right-10 w-64 h-64 bg-red-100 rounded-full blur-3xl opacity-50"></div>
             <img 
-              src="input_file_0.png" 
-              alt="HEdEF Team and Beneficiaries" 
-              className="rounded-2xl shadow-2xl relative z-10 w-full object-cover aspect-[4/5] md:aspect-auto"
+              src="https://images.unsplash.com/photo-1524178232363-1fb2b075b655?q=80&w=2070&auto=format&fit=crop" 
+              alt="HEdEF Community" 
+              className="rounded-2xl shadow-2xl relative z-10 w-full"
             />
-            <div className="absolute -bottom-6 -left-6 bg-white p-4 rounded-xl shadow-xl z-20 border border-slate-100 hidden sm:block">
-              <p className="text-teal-700 font-bold text-sm">Empowering the Working Age</p>
-              <p className="text-slate-500 text-xs">Vocational Training Programs</p>
-            </div>
           </div>
           <div className="space-y-8">
             <div>
@@ -48,7 +42,7 @@ const HomePage = () => (
                   <span className="w-2 h-2 bg-red-500 rounded-full mr-2"></span>
                   Our Mission
                 </h4>
-                <p className="text-xs text-slate-500 leading-relaxed">Advancing quality education (SDG 4) and economic empowerment (SDG 8) for out-of-school children and youth.</p>
+                <p className="text-xs text-slate-500 leading-relaxed">To advance inclusive education and economic empowerment by returning children to school, equipping youth with employable skills, and supporting their transition into dignified work.</p>
               </div>
               <div className="p-4 bg-white rounded-lg shadow-sm border border-slate-100">
                 <h4 className="font-bold text-teal-800 mb-2 flex items-center">
@@ -62,37 +56,14 @@ const HomePage = () => (
         </div>
       </div>
     </section>
-
-    {/* Video Impact Section */}
-    <section className="py-24 bg-slate-50">
-      <div className="container mx-auto px-4">
-        <div className="text-center max-w-3xl mx-auto mb-16">
-          <h2 className="text-4xl font-serif text-teal-900 mb-4">See Our Impact in Action</h2>
-          <div className="w-20 h-1 bg-red-500 mx-auto mb-6"></div>
-          <p className="text-slate-600">Watch the stories of change from our beneficiaries and see how your support transforms lives in Benin City.</p>
-        </div>
-        <div className="max-w-4xl mx-auto relative rounded-3xl overflow-hidden shadow-2xl border-8 border-white bg-slate-900 aspect-video">
-          <video 
-            controls 
-            className="w-full h-full object-cover"
-            poster="input_file_1.png"
-          >
-            <source src="input_file_2.mp4" type="video/mp4" />
-            Your browser does not support the video tag.
-          </video>
-        </div>
-      </div>
-    </section>
-
     <Programs />
-    
     <section className="py-24 bg-teal-950 text-white">
       <div className="container mx-auto px-4 text-center">
         <h2 className="text-3xl md:text-5xl font-serif mb-8 max-w-4xl mx-auto">
           "Join us in this transformative journey toward a more <span className="text-red-500">educated</span> and <span className="text-teal-400">empowered</span> society."
         </h2>
         <div className="flex flex-wrap justify-center gap-6">
-          <button className="bg-red-600 hover:bg-red-700 text-white px-8 py-4 rounded-lg font-bold transition-all transform hover:scale-105 shadow-xl shadow-red-900/40">
+          <button className="bg-red-600 hover:bg-red-700 text-white px-8 py-4 rounded-lg font-bold transition-all transform hover:scale-105">
             Become a Sponsor
           </button>
           <button className="border-2 border-white/20 hover:bg-white/10 px-8 py-4 rounded-lg font-bold transition-all">

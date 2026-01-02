@@ -4,13 +4,13 @@ import React from 'react';
 const Hero: React.FC = () => {
   return (
     <section className="relative h-screen flex items-center overflow-hidden">
-      {/* Background Image with Overlay - Using the provided group photo of children */}
+      {/* Background Image with Overlay */}
       <div 
         className="absolute inset-0 z-0 scale-105 animate-[slow-zoom_20s_ease-in-out_infinite]"
         style={{
-          backgroundImage: `linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.5)), url('input_file_1.png')`,
+          backgroundImage: `linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.5)), url('https://images.unsplash.com/photo-1488521787991-ed7bbaae773c?q=80&w=2070&auto=format&fit=crop')`,
           backgroundSize: 'cover',
-          backgroundPosition: 'center 30%',
+          backgroundPosition: 'center',
         }}
       />
       
@@ -44,7 +44,7 @@ const Hero: React.FC = () => {
       <style>{`
         @keyframes slow-zoom {
           0% { transform: scale(1); }
-          50% { transform: scale(1.05); }
+          50% { transform: scale(1.1); }
           100% { transform: scale(1); }
         }
       `}</style>
